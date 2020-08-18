@@ -225,19 +225,9 @@ ul {
 
 /*end of header*/
 
-
-
-
-
-
-.blogheaderlink {
-    font-family:Segoe-UI ;
-    font-weight: lighter;
-    text-decoration: none;
-    color:#3078ca ;
-}
-
 .covid-19{
+
+
     width: 80%;
     line-height: 3.5;
     margin-top: 24px;
@@ -253,8 +243,7 @@ ul {
     display: block;
     border-radius: 3px;
     letter-spacing: 0.6px;
-        
-    }
+}
 
 
 
@@ -1098,6 +1087,12 @@ h3{
 .loading2{
     height:auto ;
     width:100% ;
+}
+.blogheaderlink {
+    font-family:Segoe-UI ;
+    font-weight: lighter;
+    text-decoration: none;
+    color:#3078ca ;
 }
 .blogheaderlink:hover{
     text-decoration: underline;
