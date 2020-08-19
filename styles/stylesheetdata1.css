@@ -1,0 +1,1271 @@
+@font-face{
+	font-family: Founders-Grotesk;
+	src:url('../contents/fonts/founders-grotesk-test-bold.woff') format('woff');
+    font-style: normal;
+}
+@font-face{
+	font-family: Founders-Grotesk-semibold;
+	src:url('../contents/fonts/FoundersGroteskWeb-Medium.woff2') format('woff');
+    font-style: normal;
+}
+@font-face{
+	font-family: Founders-Grotesk-regular;
+	src:url('../contents/fonts/founders-grotesk-test-regular.woff') format('woff');
+    font-style: normal;
+}
+@font-face{
+	font-family: Segoe-UI;
+	src:url('../contents/fonts/Segoe\ UI.woff') format('woff');
+    font-style: normal;
+}
+html{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 100%;
+    min-width: 320px;
+    text-size-adjust: 100%;
+}
+body{
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    font-family: Helvetica-Neue,arial,helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    overflow-y: scroll;
+}
+@media(max-width:1136px){
+.width-component{
+    padding: 0px 32px 0px 32px;
+    margin: 0 auto;
+}
+}
+.width-component{
+    max-width:1136px;
+}
+.full-components{
+    display: flex;
+    flex-direction:column ;
+    color:#000000;
+    margin: 0 auto;
+}
+
+
+
+/*start of header*/
+header.lists{
+    max-height: 56px;
+    background-color: #fff;
+    border-bottom: .5px solid rgba(33,37,44,.1);
+}
+.container{
+    max-width: 1136px;
+    margin: 0 auto;
+}
+header.lists .header-panel{
+    max-width: 1136px;
+    padding: 0;
+    margin: 0 auto;
+}
+header.lists .header-panel .left-section nav{
+  height: inherit;
+}
+header.lists .header-panel{
+    max-height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    min-height: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 15px;
+    box-sizing: border-box;
+}
+
+header.lists .header-panel .left-section{
+    line-height: 2.1;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    min-height: 0;
+    max-width: 65%;
+}
+header.lists .header-panel .left-section .logo .svg-file{
+    margin-top: 10px;
+    justify-content: center;
+    width:28px;
+    height: 32px;
+    margin-bottom: 0;
+}
+header.lists .header-panel .left-section .logo{
+    margin-top: 18px;
+    margin-bottom: 21px;
+    max-height: 56px;
+    margin: 10px 0;
+    width: 28px;
+    display: flex;
+    margin-right: 15px;
+}
+header.lists .header-panel .left-section .menu{
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    min-height: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+header.lists .header-panel .left-section .menu .list-left-section{
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+}
+header.lists .header-panel .left-section .menu .list-left-section .menulink{
+    display: flex;
+    margin-right: 0;
+    text-decoration: none;
+}
+header.lists .header-panel .left-section .menu .list-left-section .linkies {
+    max-width: inherit;
+    color: #999;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 42px;
+    line-height: 3.5;
+    padding: 0 15px;
+}
+header.lists .header-panel .right-section{
+    max-height: inherit;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    min-height: 0;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+header.lists .header-panel .right-section .search-flex{
+    display: none;
+}
+
+
+.right-section-link{
+    color: #3078ca;
+    font-size: 13px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+@media (max-width: 576px){
+    header.lists .header-panel .left-section {
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    min-height: 0;
+    max-width: 65%;
+    overflow-y: auto;
+    }
+    header.lists .header-panel .right-section{
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    min-height: 0;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    }
+}
+@media (min-width: 720px){
+    header.lists .header-panel .left-section {
+        max-width: none;
+        overflow-y: visible;
+    }
+}
+@media (min-width: 992px){
+    header.lists .header-panel .right-section .search-flex {
+        fill: #999;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        min-width: 0;
+        min-height: 0;
+        align-items: center;
+        border-left: 0.5px solid rgba(33,37,44,.1);
+        padding-left: 10px;
+        position: relative;
+        margin-bottom: 0;
+    }
+    header.lists .header-panel .right-section .search-flex label{
+        cursor: default;
+    }
+    header.lists .header-panel .right-section .search-flex .input-search{
+        color: #999;
+        border: 0;
+        height:56px;
+        margin-left: 5px;
+    }
+    header.lists .header-panel .right-section .search-flex input[type="text" i] {
+        padding: 1px 2px;
+        font: 400 10px Arial;
+    }
+    header.lists .header-panel .right-section .search-flex input:focus{
+        outline: none;
+        border: 0;
+    }
+}
+
+
+/*end of header*/
+
+.full-components .container .covid-19{
+    width: 80%;
+    line-height: 3.5;
+    margin-top: 24px;
+    font-family: Segoe-UI;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #385075;
+    color: #fff;
+    margin: 24px auto 0px;
+    padding-top: 13.610px 0;
+    text-align: center;
+    display: block;
+    border-radius: 3px;
+    letter-spacing: 0.6px;
+}
+
+
+
+
+/*Start of Title */
+.full-components .container .titlecard .div-angel-list-title{
+    box-sizing: border-box;
+    border: lawngreen;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+.full-components .container .titlecard .div-angel-list-title .angel-list-title{
+    width: 150px;
+}
+
+.full-components .container .titlecard .topic{
+    color:#000000;
+    
+    width: inherit;
+    font-size: 40px;
+    word-spacing: 0px;
+    line-height:1.1;
+    font-family:Founders-Grotesk;
+    text-align: center;
+    font-weight: bolder;
+    margin: 24px 0;
+    margin-top: 0;
+}
+img{
+    fill: #000000;
+}
+@media (min-width:720px){
+    .full-components .container .titlecard .topic-para{
+        font-family:Segoe-UI;
+        font-size:24px;
+        width:723px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 72px;
+        margin-bottom: 0;
+        margin-top: 0;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+.full-components .container .titlecard .topic-para{
+    display: none;
+}
+.full-components .container .titlecard{
+    padding:88px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: inherit;
+    justify-content: center;
+    display: block;
+}
+
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    min-width: 0;
+    min-height: 0;
+    flex-wrap: wrap;
+}
+.ctalink{
+    font-family: Segoe-UI;
+    color:#0a6cff;
+    margin: auto 0 auto 24px;
+}
+.ctalink:hover{
+    text-decoration: underline;
+}
+
+@media (min-width:1136px){
+    .full-components .container .titlecard .topic{
+        font-size: 70px;
+    }
+    
+}
+
+/*End of Title */
+
+/*Start of businessunits*/
+@media (max-width:720px){
+    .full-components .container .business-units{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-family: Founders-Grotesk-semibold;
+        margin-left: auto;
+        margin-right: auto;
+        height:inherit;
+        font-weight: lighter;
+        display: flex;
+        box-sizing: border-box;
+        padding:0;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+    .full-components .container .titlecard .topic{
+        margin-bottom: 8px;
+    }
+    .full-components .container .business-units .businessunit-1 .businessunit-align .angellist-talent-align{
+        margin:0 0 16px;
+        order: 2;
+    }
+    .full-components .container .business-units .businessunit-1 .businessunit-align{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+        margin: 0 auto;
+    }
+    .full-components .container .business-units .businessunit-1{
+        margin-bottom: 40px;
+    }
+    
+    .full-components .container .business-units .businessunit-1 .businessunit-align .webp{
+        order: 1;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media(min-width:720px)
+{
+    .full-components .container .business-units{
+        font-family: Founders-Grotesk-semibold;
+        margin-left: auto;
+        margin-right: auto;
+        height:inherit;
+        font-weight: lighter;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding:0;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-bottom: 120px;
+    }
+    .full-components .container .business-units .businessunit-1{
+        font-weight: lighter;
+        box-sizing: border-box;
+        align-items: flex-start;
+        margin-bottom: 0;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        min-width: 0;
+        min-height: 0;
+        width: 30%;
+    }
+    .full-components .container .business-units .businessunit-1 .businessunit-align{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        flex-flow: row;
+        box-sizing: border-box;
+    }
+}
+
+h3{
+    margin: 19px 0px 16px ;
+}
+
+.full-components .container .business-units .businessunit-1 .businessunit-align .angellist-talent-align{
+     font-weight: lighter;
+    font-size: 23px;
+}
+.full-components .container .business-units .businessunit-1 .businessunit-align .webp{
+    object-fit: scale-down ;
+    max-width: 65px;
+    max-height: 65px;
+    float: right;
+}
+.full-components .container .business-units .businessunit-1 .angellist-talent-content{
+    font-family: Segoe-UI;
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.full-components .container .business-units .businessunit-1  .apply-to-be-a-investor:hover{
+    font-weight: bolder;
+    background-color:#322c81;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.full-components .container .business-units .businessunit-1  .apply-to-be-a-investor{
+    font-weight: bolder;
+    background-color:#4139a7;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.full-components .container .business-units .businessunit-1  .explore-products{
+    font-weight: bolder;
+    background-color: #cc4d29;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.full-components .container .business-units .businessunit-1 .explore-products:hover{
+    font-weight: lighter;
+    background-color: #a23d20;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.full-components .container .business-units .businessunit-1 .find-startup-jobs{
+    font-weight: bolder;
+    background-color: #0f6fff;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.full-components .container .business-units .businessunit-1 .find-startup-jobs:hover{
+    font-weight: bolder;
+    background-color: #0058db;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/*End of businessunits*/
+/*Start of Editorial Pitch*/
+
+@media(min-width: 720px){
+    .full-components .editorial-pitch{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .full-components .editorial-pitch .grow-your-career{
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        min-width: 0;
+        min-height: 0;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        margin-bottom: 112px;
+        position: relative;
+    }
+    .full-components .editorial-pitch .grow-your-career .right-section-editorial .grow-your-career-img{
+        position: relative;
+        right: 0;
+        top: 10px;
+        width: 100%;
+    }
+    .full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job .find-startup-jobs2{
+        font-family: Founders-Grotesk-semibold;
+        font-weight: lighter;
+        background-color: #0f6fff;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 16px 32px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job .find-startup-jobs2:hover{
+        font-family: Founders-Grotesk-semibold;
+        font-weight: lighter;
+        background-color: #0058db;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 16px 32px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .full-components .editorial-pitch .grow-your-career .left-section-editorial{
+        width: 50%;
+    }
+    
+}
+
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .h2para{
+    font-family: Segoe-UI;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    
+        
+}
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .talent-value-props{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 0;
+    flex-wrap: wrap;
+ }
+ .full-components .editorial-pitch .grow-your-career .left-section-editorial .talent-value-props .grow-career-point{
+    width:45%;
+    margin-bottom: 32px;
+ }
+ .paraclones{
+    font-family: Segoe-UI;
+    margin:0;
+ }
+ .heading2{
+    font-family: Founders-Grotesk-semibold;
+    margin-bottom: 4px;
+    font-weight: lighter;
+}
+
+ .full-components .editorial-pitch .grow-your-career .left-section-editorial .heading3,
+.heading4{
+    font-family: Founders-Grotesk;
+    font-size: 40px;
+}
+@media(min-width: 1136px){
+    .full-components .editorial-pitch .grow-your-career .left-section-editorial .heading3{
+        font-family: Founders-Grotesk;
+        font-size: 70px;
+        word-spacing: -3px;
+        letter-spacing: 0px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        box-sizing: border-box;
+        max-height: 72px;
+        line-height: 1;
+        justify-content: center;
+    }
+}
+@media (max-width:1136px){
+    .full-components .editorial-pitch .grow-your-career .left-section-editorial .talent-value-props .grow-career-point{
+        width: 100%;
+    }
+}
+@media(max-width: 720px){
+.grow-career-point-recruiting{
+        display: block;
+}
+   .full-components .editorial-pitch{
+    width: inherit;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 32px;
+}
+.full-components .editorial-pitch .grow-your-career.right-section-editorial {
+    position: absolute;
+    right: -70px;
+    top: -80px;
+    width: 50%;
+    height: auto;
+    right: 24px;
+} 
+.full-components .editorial-pitch .grow-your-career .right-section-editorial .grow-your-career-img{
+    position: absolute;
+    right: -31px;
+    top: 11px;
+    width: 100%;
+    height: auto;
+}
+.full-components .editorial-pitch .grow-your-career{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 0;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-bottom: 112px;
+    position: relative;
+
+}
+.full-components .editorial-pitch .grow-your-career .left-section-editorial{
+    width: 100%;
+}
+
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .heading3{
+    margin-top: 0;
+}
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .talent-value-props{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 0;
+    flex-wrap: wrap;
+}
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .talent-value-props .grow-career-point{
+    width: 100%;
+    margin-bottom: 32px;
+}
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job .find-startup-jobs2{
+    font-family: Founders-Grotesk-semibold;
+    font-weight: lighter;
+    background-color: #0f6fff;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job .find-startup-jobs2:hover{
+    font-family: Founders-Grotesk-semibold;
+    font-weight: lighter;
+    background-color: #0058db;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+}
+
+.full-components .editorial-pitch .grow-your-career .right-section-editorial  {
+    width: 45%;
+    text-align: right;
+    position: relative;
+}
+
+.full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job  .ctalink2{
+    color: #322c81;
+}
+.full-components .editorial-pitch .jobs-heading{
+    font-family: Founders-Grotesk-semibold,sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.125;
+}
+.full-components .editorial-pitch .job-listings{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 0;
+    flex-wrap: wrap;
+
+}
+
+@media(max-width: 720px){
+}
+.full-components .editorial-pitch .job-listings .job-listings-1{
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    margin-bottom: 24px;
+    width: 100%;
+}
+@media (min-width: 720px){
+    .full-components .editorial-pitch .job-listings .job-listings-1{
+        padding: 16px;
+        border-radius: 4px;
+        border: 1px solid #000;
+        width: auto;
+        margin-right: 24px;
+    }
+}
+.full-components .editorial-pitch .job-listings .job-listings-1 .details{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 0;
+   
+}
+.full-components .editorial-pitch .job-listings .job-listings-1 .loading{
+    height: 48px;
+    width: 48px;
+}
+.full-components .editorial-pitch .job-listings .job-listings-1 .jobinfo{
+    margin-left: 16px;
+}
+.full-components .editorial-pitch  .job-listings .job-listings-1 .jobinfo .salary{
+    margin: 0;
+	font-family:Segoe-UI ;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.full-components .editorial-pitch  .job-listings .job-listings-1 .jobinfo .jobtitle{
+    font-family:Founders-Grotesk-semibold ;
+    font-size: 20px;
+    margin-top:0;
+    margin-bottom:4px;
+}
+.full-components .editorial-pitch  .job-listings .job-listings-1 .jobinfo .companyname{
+    text-decoration:underline ;
+    color: #000000;
+}
+.full-components .editorial-pitch .dreamjob{
+    font-family: Segoe-UI;
+    margin-top: 5px;
+    order: 4;
+    margin-bottom: 195px;
+    text-align: center;
+}
+.full-components .editorial-pitch .dreamjob .dreamjobcta{
+   color:#0a6cff;
+}
+/*End of Editorial Pitch*/
+/*Start of recruiting editorial*/
+@media(max-width: 720px){
+    .full-components .grow-your-career .right-section-editorial-venture .grow-your-career-img2{
+        position: absolute;
+        top: -80px;
+        right: -32px;
+        z-index: 0;
+        width: 130px;
+    }
+    .full-components .grow-your-career .right-section-editorial-venture{
+        height: 0;
+    }
+    }
+    
+    .full-components .recruiting-editorial{
+        font-family: Founders-Grotesk-semibold;
+        padding: 72px 72px 144px;
+        background-color: #000000;
+        color: #FFF;
+        margin-bottom: 96px;
+        width: inherit;
+    }   
+    .full-components .grow-your-career  .right-section-editorial-venture{
+        width: 45%;
+        text-align: right;
+        position: relative;
+    }
+    
+    .full-components .recruiting-editorial .inner-container .content{
+        position: relative;
+        margin: 0 auto;
+        max-width:100%;
+        height: fit-content;
+    }
+    
+    .full-components .recruiting-editorial .inner-container .content .recruiting-image{
+        position: absolute;
+        left: 0;
+        width: 150px;
+        display: flex;
+        right: 0;
+        margin: 0 auto;
+        top: -171px;
+    }
+    .full-components .recruiting-editorial .inner-container{
+        margin: 0 auto;
+    }
+    
+    .full-components .recruiting-editorial .inner-container .content .statistics{
+        position: relative;
+        margin: 0 auto;
+        font-family: Founders-Grotesk-semibold,sans-serif;
+        line-height: 1.3;
+        font-size: 80px;
+        font-weight: 700;
+        text-align: center;
+    }
+    @media(min-width:1136px){
+        .full-components .recruiting-editorial .inner-container .content .statistics{
+            margin: 0 auto;
+            font-size: 270px;
+        }
+        .full-components .grow-your-career .right-section-editorial-venture .heading4{
+            font-family: Founders-Grotesk;
+            font-size: 70px;
+            word-spacing: -3px;
+            letter-spacing: 0px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            box-sizing: border-box;
+            max-height: 144px;
+            line-height: 1;
+            justify-content: center;
+        }
+    }
+    
+    .full-components .recruiting-editorial .inner-container .content .statistics .plus-sign{
+        font-size: 50px;
+        position: absolute;
+    }
+    .full-components .recruiting-editorial .inner-container .content  .statistics-explanation{
+        text-align: center;
+        font-size: 32px;
+        margin: 0 0 96px;
+        line-height: 1;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description{
+        width: inherit;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    @media(min-width: 720px){
+        .full-components .recruiting-editorial .inner-container .content .statistics .plus-sign{
+        top:50px;
+        }
+        .full-components .grow-your-career .right-section-editorial-venture .grow-your-career-img2{
+            position: relative;
+            top: 150px;
+            width: 442px;
+        }
+        
+    }
+    @media(min-width: 1136px){
+        .full-components .recruiting-editorial .inner-container .content .description .description-left{
+            width: 50%;
+            
+        }
+        .full-components .recruiting-editorial .inner-container .content .description .description-right{
+            width: 45%;
+            margin-left: 5%;
+        }
+        .grow-career-point-recruiting{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    .full-components .recruiting-editorial .inner-container .content .description .description-right{
+        
+        align-self: end;
+       
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-right .companies{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        min-width: 0;
+        min-height: 0;
+        flex-wrap: wrap;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-right .companies .companywrap{
+        width: 86px;
+        height: 99px;
+        margin: 0 16px 48px;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-right .companies .companywrap .company-link{
+        font-size: 14px;
+        font-family: Segoe-UI;
+        color:#FFF;
+        text-align: center;
+        margin: 0;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-right .companies .companywrap .company-link:hover{
+        text-decoration: underline;
+        font-size: 15px;
+        font-family: Segoe-UI;
+        color:#FFF;
+        text-align: center;
+        margin: 0;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-right .companies .companywrap .startup-logo{
+        width: 70px;
+        height: 70px;
+        margin: 0 8px 8px;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-left .recruiting-value-props{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-left .paragraph-large{
+        margin: 0 0 40px;
+        line-height: 1.5;
+        font-family: Segoe-UI;
+        font-size: 24px;
+    }
+    
+    .full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job .apply-to-be-an-investor{
+        font-family: Founders-Grotesk-semibold;
+        font-weight: lighter;
+        background-color: rgb(65, 57, 167);
+        color: #FFF;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 16px 32px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job .apply-to-be-an-investor:hover{
+        font-family: Founders-Grotesk-semibold;
+        font-weight: lighter;
+        background-color: #322c81;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 16px 32px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-left .post-a-job2{
+        font-family: Founders-Grotesk-semibold;
+        font-weight: lighter;
+        background-color: #0f6fff;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 16px 32px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .full-components .recruiting-editorial .inner-container .content .description .description-left .post-a-job2{
+        font-family: Founders-Grotesk-semibold;
+        font-weight: lighter;
+        background-color: #0058db;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 6.5;
+        padding: 16px 32px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    @media(max-width:1136px){
+    .full-components .recruiting-editorial .inner-container .content .description .description-left .paragraph-large{
+        font-size: 20px;
+        line-height: 1.5;
+    } 
+    .full-components .recruiting-editorial .inner-container .content .description .description-left .recruiting-value-props{
+        display: flex;
+        flex-direction: column;
+    } 
+}
+    @media(max-width:720px){
+        .full-components .recruiting-editorial .inner-container .content .statistics-explanation{
+            font-size: 24px;
+            line-height: 1.25;
+            font-weight: 500;
+            margin-bottom: 48px;
+            text-align: center;
+        }
+        .full-components .recruiting-editorial{
+            padding: 72px 32px 92px;
+        }
+        
+    }
+/*End of recruiting editorial*/
+
+
+
+/*Start of product hunt*/
+.full-components .product-hunt{
+    background-color: #000000;
+    color: #FFF;
+    margin: 144px 0 72px ;
+    padding: 48px 0;
+    width: inherit;
+}
+.full-components .product-hunt .ph-content .ph-heading{
+    font-size: 48px;
+    line-height: 1;
+    margin: 0 0 56px;
+    font-family: Founders-Grotesk;
+    font-weight: lighter;
+    text-align: center;
+}
+.full-components .product-hunt .ph-content{
+    max-height:inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding:56px;
+    box-sizing: border-box;
+}
+
+.full-components .product-hunt .ph-content .ph-rocket{
+    position: relative;
+    width: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -175px;
+}
+.full-components .product-hunt .ph-content .ph-logo{
+    filter: invert(100%);
+    margin-bottom: 40px;
+}
+.full-components .product-hunt .ph-content .ph-link{
+    font-family: Founders-Grotesk-semibold;
+    font-weight: lighter;
+    background-color: #cc4d29;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.full-components .product-hunt .ph-content .ph-link:hover{
+    font-weight: lighter;
+    background-color: #a23d20;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+@media(max-width: 1136px){
+    .full-components .product-hunt .ph-content .ph-heading{
+        font-size: 32px;
+    }
+    
+}
+/*End of product hunt*/
+
+/*Start of Blog Section*/
+.full-components .blog-section{
+    margin: 0 auto;
+    margin-bottom: 103px;
+}
+.full-components .blog-section .blog-header{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 0 32px;
+
+}
+.full-components .blog-section .blog-header .blog-header-h2{
+    font-family: Founders-Grotesk-semibold;
+    font-weight: lighter;
+    font-size: 32px;
+    margin: 0;
+}
+.full-components .blog-section .articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+}
+.full-components .blog-section .articles .content-card{
+    width: 30%;
+}
+.full-components .blog-section .articles .content-card .loading2{
+    height:auto ;
+    width:100% ;
+}
+.full-components .blog-section .blog-header .blog-header-link {
+    font-family:Segoe-UI ;
+    font-weight: lighter;
+    text-decoration: none;
+    color:#3078ca ;
+}
+.full-components .blog-section .blog-header .blog-header-link:hover{
+    text-decoration: underline;
+
+}
+.full-components .blog-section .articles .content-card .category-article{
+    font-family: Segoe-UI;
+    font-size: 14px;
+}
+.full-components .blog-section .articles .content-card .blog-content:hover{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: Founders-Grotesk-semibold,sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.full-components .blog-section .articles .content-card .blog-content{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: Founders-Grotesk-semibold,sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-decoration: none;
+}
+@media(max-width:720px){
+    .full-components .blog-section .articles .content-card{
+        width: 100%;
+    }
+}
+/*End of Blog Section*/
+/*Start of Footer*/
+@media(max-width: 720px){
+.section-small-heading,
+.section-wide-heading{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: Founders-Grotesk-semibold,sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+}
+@media(max-width:1135px){
+    
+    .footer .content-footer .section-small .section-small-heading,
+    .footer .content-footer .section-small .section-wide-heading{
+        font-size: 24px;
+    }
+    .footer .footer-links, .full-components .footer .baseline-link{
+        font-size: 20px;
+    }
+    .footer .footer-links:hover{
+        font-size: 20px;
+    }
+    .footer .content-footer .section-small{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 64px;
+    margin-right: 64px;
+    max-width: 224px;
+    }
+    .footer .content-footer{
+        margin: 0;
+    }
+    .footer .content-footer .section-wide{
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        min-height: 0;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 64px;
+        margin-right: 16px;
+        max-width: 272px;
+    }
+
+}
+.footer .baseline-link{
+    margin: auto 16px auto 0;
+}
+.footer{
+    font-size: 14px;
+    font-family: Founders-Grotesk-semibold;
+    font-weight: 500;
+    color:#FFF;
+    background-color: black;
+    padding: 40px;
+    width: inherit;
+}
+.footer-links{
+    color:#FFF;
+    text-decoration: none;
+    padding-bottom: 8px;
+}
+.footer-links:hover{
+    color:#FFF;
+    text-decoration: underline;
+    padding-bottom: 8px;
+}
+.footer .content-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 0;
+    flex-wrap: wrap;
+    max-width: 1136px;
+}
+.footer .content-footer .section-small,
+.footer .content-footer .section-wide{
+    
+    display: flex;
+    margin-bottom: 64px;
+    flex-direction: column;
+    
+   
+}
+
+.footer .content-footer .baseline .baseline-logo{
+    width: 25px;
+    height: 36px;
+    margin-right: 24px;
+}
+
+@media(min-width: 1136px){
+    .footer .content-footer{
+        margin: 0 auto;
+    }
+    .footer .content-footer .section-wide{
+        width: 224px;
+        margin-bottom: 64px;
+        padding-right: 32px;
+    }
+    .footer .content-footer.section-small{
+        width: 224px;
+        margin-right: 32px;
+    }
+    .baseline-link{
+        font-size: 12px;
+        margin: auto 16px auto 0;
+    }
+}
+/*End of Footer*/
