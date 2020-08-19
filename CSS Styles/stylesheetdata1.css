@@ -1,21 +1,21 @@
 @font-face{
 	font-family: Founders-Grotesk;
-	src:url('./src/founders-grotesk-test-bold.woff') format('woff');
+	src:url('../src/Fonts/founders-grotesk-test-bold.woff') format('woff');
     font-style: normal;
 }
 @font-face{
 	font-family: Founders-Grotesk-semibold;
-	src:url('./src/FoundersGroteskWeb-Medium.woff2') format('woff');
+	src:url('../src/Fonts/FoundersGroteskWeb-Medium.woff2') format('woff');
     font-style: normal;
 }
 @font-face{
 	font-family: Founders-Grotesk-regular;
-	src:url('./src/founders-grotesk-test-regular.woff') format('woff');
+	src:url('../src/Fonts/founders-grotesk-test-regular.woff') format('woff');
     font-style: normal;
 }
 @font-face{
 	font-family: Segoe-UI;
-	src:url('./src/Segoe\ UI.woff') format('woff');
+	src:url('../src/Fonts/Segoe\ UI.woff') format('woff');
     font-style: normal;
 }
 html{
@@ -257,7 +257,7 @@ ul {
     justify-content: center;
     margin-bottom: 4px;
 }
-.Angel-list-title{
+.angel-list-title{
     width: 150px;
 }
 
@@ -304,7 +304,7 @@ img{
     display: block;
 }
 
-.PostAJob{
+.Post-a-job{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -332,7 +332,7 @@ img{
 
 /*Start of businessunits*/
 @media (max-width:720px){
-    .BusinessUnits{
+    .business-units{
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -351,18 +351,18 @@ img{
     .topic{
         margin-bottom: 8px;
     }
-    .Angellist-talent-align{
+    .angellist-talent-align{
         margin:0 0 16px;
         order: 2;
     }
-    .Businessunit-align{
+    .businessunit-align{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width:100%;
         margin: 0 auto;
     }
-    .BusinessUnit-1{
+    .businessUnit-1{
         margin-bottom: 40px;
     }
     
@@ -374,7 +374,7 @@ img{
 }
 @media(min-width:720px)
 {
-    .BusinessUnits{
+    .business-units{
         font-family: Founders-Grotesk-semibold;
         margin-left: auto;
         margin-right: auto;
@@ -388,7 +388,7 @@ img{
         box-sizing: border-box;
         margin-bottom: 120px;
     }
-    .BusinessUnit-1{
+    .businessUnit-1{
         font-weight: lighter;
         box-sizing: border-box;
         align-items: flex-start;
@@ -401,7 +401,7 @@ img{
         min-height: 0;
         width: 30%;
     }
-    .Businessunit-align{
+    .businessunit-align{
         width:100%;
         display: flex;
         flex-direction: row;
@@ -416,7 +416,7 @@ h3{
     margin: 19px 0px 16px ;
 }
 
-.Angellist-talent-align{
+.angellist-talent-align{
      font-weight: lighter;
     font-size: 23px;
 }
@@ -432,7 +432,7 @@ h3{
     margin-bottom: 40px;
     line-height: 1.5;
 }
-.apply-to-be-an-investor:hover{
+.apply-to-be-a-investor:hover{
     font-weight: bolder;
     background-color:#322c81;
     color: #FFF;
@@ -442,7 +442,7 @@ h3{
     border-radius: 3px;
     text-decoration: none;
 }
-.apply-to-be-an-investor{
+.apply-to-be-a-investor{
     font-weight: bolder;
     background-color:#4139a7;
     color: #FFF;
@@ -497,7 +497,7 @@ h3{
 /*Start of Editorial Pitch*/
 
 @media(min-width: 720px){
-    .EditorialPitch{
+    .editorial-pitch{
         display: flex;
         flex-direction: column;
         width: inherit;
@@ -512,7 +512,7 @@ h3{
     }
     
     
-    .growyourcareer{
+    .grow-your-career{
         width: inherit;
         display: flex;
         flex-direction: row;
@@ -564,7 +564,7 @@ h3{
     
         
 }
-.talentValueProps{
+.talent-value-props{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -573,7 +573,7 @@ h3{
     min-height: 0;
     flex-wrap: wrap;
  }
- .growCareerPoint{
+ .grow-career-point{
     width:45%;
     margin-bottom: 32px;
  }
@@ -602,15 +602,15 @@ h3{
     }
 }
 @media (max-width:1136px){
-    .growCareerPoint{
+    .grow-career-point{
         width: 100%;
     }
 }
 @media(max-width: 720px){
-.growCareerPointRecruiting{
+.grow-career-point-recruiting{
         display: block;
 }
-    .EditorialPitch{
+    .editorial-pitch{
     width: inherit;
     margin: 0 auto;
     text-align: left;
@@ -631,7 +631,7 @@ h3{
     width: 100%;
     height: auto;
 }
-.growyourcareer{
+.grow-your-career{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -653,7 +653,7 @@ h3{
 .heading3{
     margin-top: 0;
 }
-.talentValueProps{
+.talent-value-props{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -662,7 +662,7 @@ h3{
     min-height: 0;
     flex-wrap: wrap;
 }
-.growCareerPoint{
+.grow-career-point{
     width: 100%;
     margin-bottom: 32px;
 }
@@ -800,7 +800,7 @@ h3{
         width: 45%;
         margin-left: 5%;
     }
-    .growCareerPointRecruiting{
+    .grow-career-point-recruiting{
         display: flex;
         flex-direction: column;
     }
@@ -858,7 +858,7 @@ h3{
     font-size: 24px;
 }
 
-.applyToBeAnInvestor{
+.apply-to-be-an-investor{
     font-family: Founders-Grotesk-semibold;
     font-weight: lighter;
     background-color: rgb(65, 57, 167);
@@ -869,7 +869,7 @@ h3{
     border-radius: 3px;
     text-decoration: none;
 }
-.applyToBeAnInvestor:hover{
+.apply-to-be-an-investor:hover{
     font-family: Founders-Grotesk-semibold;
     font-weight: lighter;
     background-color: #322c81;
@@ -933,7 +933,7 @@ h3{
     text-align: center;
     line-height: 1.125;
 }
-.Joblistings{
+.job-listings{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -945,7 +945,7 @@ h3{
 }
 @media(max-width: 720px){
 }
-.Joblistings-1{
+.job-listings-1{
     padding: 16px;
     border-radius: 4px;
     border: 1px solid #000;
@@ -953,7 +953,7 @@ h3{
     width: 100%;
 }
 @media (min-width: 720px){
-    .Joblistings-1{
+    .job-listings-1{
         padding: 16px;
         border-radius: 4px;
         border: 1px solid #000;
@@ -973,7 +973,7 @@ h3{
     height: 48px;
     width: 48px;
 }
-.Jobinfo{
+.jobinfo{
     margin-left: 16px;
 }
 .salary{
@@ -982,7 +982,7 @@ h3{
     font-size: 14px;
     line-height: 1.5;
 }
-.Jobtitle{
+.jobtitle{
     font-family:Founders-Grotesk-semibold ;
     font-size: 20px;
     margin-top:0;
@@ -1009,7 +1009,7 @@ h3{
 
 /*Start of product hunt*/
 
-.phHeading{
+.ph-heading{
     font-size: 48px;
     line-height: 1;
     margin: 0 0 56px;
@@ -1017,7 +1017,7 @@ h3{
     font-weight: lighter;
     text-align: center;
 }
-.phcontent{
+.ph-content{
     max-height:inherit;
     display: flex;
     flex-direction: column;
@@ -1033,7 +1033,7 @@ h3{
     padding: 48px 0;
     width: inherit;
 }
-.phrocket{
+.ph-rocket{
     position: absolute;
     width: 120px;
     left: 0;
@@ -1041,16 +1041,16 @@ h3{
     margin: 0 auto;
     top: -120px;
 }
-.phlogo{
+.ph-logo{
     filter: invert(100%);
     margin-bottom: 40px;
 }
-.phlink{
+.ph-link{
     font-family: Founders-Grotesk-semibold;
     font-weight: lighter;
 }
 @media(max-width: 1136px){
-    .phHeading{
+    .ph-heading{
         font-size: 32px;
     }
     
@@ -1058,18 +1058,18 @@ h3{
 /*End of product hunt*/
 
 /*Start of Blog Section*/
-.blogSection{
+.blog-section{
     margin: 0 auto;
     margin-bottom: 103px;
 }
-.blogHeader{
+.blog-header{
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     margin:0 0 32px;
 
 }
-.blogHeaderh2{
+.blog-header-h2{
     font-family: Founders-Grotesk-semibold;
     font-weight: lighter;
     font-size: 32px;
@@ -1081,20 +1081,20 @@ h3{
     flex-wrap: wrap;
     margin-bottom: 22px;
 }
-.contentcard{
+.content-card{
     width: 30%;
 }
 .loading2{
     height:auto ;
     width:100% ;
 }
-.blogheaderlink {
+.blog-header-link {
     font-family:Segoe-UI ;
     font-weight: lighter;
     text-decoration: none;
     color:#3078ca ;
 }
-.blogheaderlink:hover{
+.blog-header-link:hover{
     text-decoration: underline;
 
 }
@@ -1112,7 +1112,7 @@ h3{
     text-decoration: underline;
 }
 @media(max-width:720px){
-    .contentcard{
+    .content-card{
         width: 100%;
     }
 }
@@ -1223,7 +1223,3 @@ h3{
     }
 }
 /*End of Footer*/
-
-
-
-
