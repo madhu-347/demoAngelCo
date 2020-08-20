@@ -575,6 +575,7 @@ h3{
  .heading2{
     font-family: Founders-Grotesk-semibold;
     margin-bottom: 4px;
+    font-size: 20px;
     font-weight: lighter;
 }
 
@@ -684,11 +685,7 @@ h3{
 }
 }
 
-.full-components .editorial-pitch .grow-your-career .right-section-editorial  {
-    width: 45%;
-    text-align: right;
-    position: relative;
-}
+
 
 .full-components .editorial-pitch .grow-your-career .left-section-editorial .post-a-job  .ctalink2{
     color: #322c81;
@@ -723,6 +720,11 @@ h3{
     width: 100%;
 }
 @media (min-width: 720px){
+    .full-components .editorial-pitch .grow-your-career .right-section-editorial  {
+        width: 45%;
+        text-align: right;
+        position: relative;
+    }
     .full-components .editorial-pitch .job-listings .job-listings-1{
         padding: 16px;
         border-radius: 4px;
@@ -860,7 +862,8 @@ h3{
         line-height: 1;
     }
     .full-components .recruiting-editorial .inner-container .content .description{
-        width: inherit;
+        width: 80%;
+        margin: auto;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -1240,7 +1243,8 @@ h3{
     display: flex;
     margin-bottom: 64px;
     flex-direction: column;
-    
+    padding-right: 32px;
+    width: 224px;
    
 }
 
