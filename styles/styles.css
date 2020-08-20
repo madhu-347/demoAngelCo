@@ -142,6 +142,21 @@ header.lists .header-panel .left-section .menu .list-left-section .linkies {
     line-height: 3.5;
     padding: 0 15px;
 }
+header.lists .header-panel .left-section .menu .list-left-section .menulink:hover{
+    display: flex;
+    margin-right: 0;
+    text-decoration: none;
+}
+header.lists .header-panel .left-section .menu .list-left-section .linkies:hover {
+    max-width: inherit;
+    background-color: #f9f9f9;
+    color: grey;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 42px;
+    line-height: 3.5;
+    padding: 0 15px;
+}
 header.lists .header-panel .right-section{
     max-height: inherit;
     display: flex;
