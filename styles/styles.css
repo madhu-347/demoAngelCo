@@ -894,7 +894,7 @@ h3{
     .grow-your-career-img2{
     position: absolute;
     top: -80px;
-    right: -50px;
+    right: 0;
     z-index: 0;
     width: 130px;
     }
